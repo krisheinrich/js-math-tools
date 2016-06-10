@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A useful (and open source) suite of Math Tools for a variety of subjects.">
+  <meta name="author" content="Kris Heinrich">
+
+  <title>Open Source Math Tools</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. -->
+  <style>
+  body {
+      padding-top: 70px;
+  }
+  </style>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="brand" class="navbar-brand" href="#">Math Tools</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <a id="calc-link" href="#">Calculator</a>
+          </li>
+          <li>
+            <a id="number-link" href="#">Number Theory</a>
+          </li>
+          <li>
+            <a id="prob-stats-link" href="#">Probability &amp; Statistics</a>
+          </li>
+          <li>
+            <a id="functions-link" href="#">Functions</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Page Content -->
+  <div id="main-content" class="container">
+
+    <!-- Full-view templates -->
+    <!-- Home -->
+    <template id="home-temp">
+      <div class="row full-view">
+        <div class="col-lg-12 text-center">
+          <h1>Online Math Tools</h1>
+          <p class="lead">Choose a category:</p>
+          <ul class="list-unstyled">
+            <li>Bootstrap v3.3.6</li>
+            <li>Vanilla JS (ES5)</li>
+            <li>Click <a href="https://github.com/krisheinrich/js-math-tools">here</a> to check out the source code on GitHub.</li>
+          </ul>
+        </div>
+      </div> <!-- /.row -->
+    </template>
+
+    <!-- Calculator -->
+    <template id="calc-temp">
+      <div class="row full-view">
+        <div class="col-xs-12 text-center">
+          <h1>Basic Calculator</h1>
+          <p class="lead">See notes below.</p>
+        </div>
+        <script src="js/calc.js" charset="utf-8"></script>
+      </div> <!-- /.row -->
+    </template>
+
+    <!-- Number Theory (sidebar) -->
+    <template id="numtheory-temp">
+      <div class="row full-view">
+        <!-- Sidebar Area -->
+        <div class="col-xs-12 col-sm-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              Prime factors
+            </a>
+            <a href="#" class="list-group-item">Prime numbers
+            </a>
+            <a href="#" class="list-group-item">Fibonnaci numbers
+            </a>
+            <a href="#" class="list-group-item">Factorial (n!)
+            </a>
+          </div>
+        </div>
+        <!-- Section Content-->
+        <div class="col-xs-12 col-sm-9 text-center">
+          <h1>Number Theory</h1>
+          <p class="lead">Choose from one of the options to the left.</p>
+        </div>
+        <script src="js/number-theory.js" charset="utf-8"></script>
+      </div> <!-- /.row -->
+    </template>
+
+    <!-- Probability & Statistics (sidebar) -->
+    <template id="prob-stats-temp">
+      <div class="row full-view">
+        <!-- Sidebar Area -->
+        <div class="col-xs-12 col-sm-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Roll Dice</a>
+            <a href="#" class="list-group-item">Permutations &amp; Combinations</a>
+            <a href="#" class="list-group-item">Probability Distribution</a>
+            <a href="#" class="list-group-item">Data Set Stats
+            </a>
+          </div>
+        </div>
+        <!-- Section Content-->
+        <div class="col-xs-12 col-sm-9 text-center">
+          <h1>Number Theory</h1>
+          <p class="lead">Choose from one of the options to the left.</p>
+        </div>
+        <script src="js/number-theory.js" charset="utf-8"></script>
+      </div> <!-- /.row -->
+    </template>
+
+    <!-- Graphing Functions (sidebar) -->
+    <template id="functions-temp">
+      <div class="row full-view">
+        <!-- Sidebar Area -->
+        <div class="col-xs-12 col-sm-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">Lines</a>
+            <a href="#" class="list-group-item">Polynomials</a>
+            <a href="#" class="list-group-item">Exponential / Logarithmic Functions</a>
+            <a href="#" class="list-group-item">Trig</a>
+          </div>
+        </div>
+        <!-- Section Content-->
+        <div class="col-xs-12 col-sm-9 text-center">
+          <h1>Graphing Functions</h1>
+          <p class="lead">Choose from one of the options to the left.</p>
+        </div>
+        <script src="js/number-theory.js" charset="utf-8"></script>
+      </div> <!-- /.row -->
+    </template>
+
+    <!-- END Full templates -->
+
+  </div> <!-- /.container -->
+  <script src="js/app.js" charset="utf-8"></script>
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+
+</body>
+</html>
